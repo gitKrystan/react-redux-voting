@@ -1,6 +1,6 @@
-import { setEntries, next, vote } from './core';
+import { INITIAL_STATE, setEntries, next, vote } from './core';
 
-export default function reducer(state, action) {
+export default function reducer(state = INITIAL_STATE, action) { //jshint ignore:line
   switch (action.type) {
     case 'SET_ENTRIES':
       return setEntries(state, action.entries);
