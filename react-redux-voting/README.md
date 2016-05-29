@@ -3,6 +3,7 @@ Following along with the tutorial found [here](http://teropa.info/blog/2015/09/1
 ### Voting Server
 `cd voting-server`
 `npm install`
+`npm run start`
 
 #### Tests
 Mocha/Chai
