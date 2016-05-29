@@ -6,8 +6,11 @@ export default function startServer(store) {
   // subscribe to state
   store.subscribe(() => io.emit('state', store.getState().toJS()));
 
-  // emit current state upon connection event
   io.on('connection', (socket) => {
+    // emit current state upon connection event
     socket.emit('state', store.getState().toJS());
+
+    // emit action events into redux store
+    socket.on('action', store.dispatch.bind(store));
   });
 }
