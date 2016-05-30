@@ -9,6 +9,8 @@ from project root:
 ### Voting Client
 from project root:
 `cd voting-client`
+`webpack`
+`webpack-dev-server`
 
 ### Tests
 Mocha/Chai

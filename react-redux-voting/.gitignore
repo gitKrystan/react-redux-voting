@@ -1,2 +1,3 @@
 voting-server/node_modules
 voting-client/node_modules
+voting-client/dist/bundle.js
