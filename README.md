@@ -19,6 +19,8 @@ from project root:
 
 #### To Run
 `webpack-dev-server`
+Navigate to http://localhost:8080/webpack-dev-server/.
+Changes reload with react-hot reloader.
 
 #### To Test
 Mocha/Chai
